@@ -26,7 +26,7 @@ document.querySelector('.newBtn').addEventListener('click', () => {
         let id = parseFloat(fs.readFileSync('id.txt'));
         id++;
         pFile.push({ id: id, materials: p });
-        fs.writeFileSync('id.txt', id);
+        fs.writeFileSync('id.txt', `${id}`, 'utf8');
 
         fs.writeFileSync('projects.json', JSON.stringify(pFile));
         document.querySelector('.mats').innerHTML = '';
