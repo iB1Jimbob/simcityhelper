@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+button:not(.newBtn) {
+    padding: 14px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+.done {
+    background-color: green;
+    border: solid 3px green;
+}
+
+.delete {
+    background-color: red;
+    border: solid 3px red;
+}
+
+button:not(.newBtn):hover {
+    background-color: antiquewhite;
+}
+
+#projects .project {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    border: solid black 3px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#projects .project .materials .material {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#projects .project .materials .material img {
+    width: 2em;
+    height: 2em;
+}
+#projects .project .materials .material p {
+    font-family: Ubuntu;
+    font-size: 2em;
+}
+
+#projects .project .materials .material p .amount {
+    font-size: 0.75em;
+    font-weight: bold;
+    color: gray;
+}
+
+#projects .project .materials .material.enough {
+    background-color: lightgreen;
+}
+#projects .project .materials .material:not(.enough) {
+    background-color: lightcoral;
+}
+
+#newProject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+}
+
+.newBtn {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5em;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 30%;
+    margin: 10px;
+}
+.newBtn:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+}
+
+#selectMaterialsBg {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 1;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: none;
+}
+
+#selectMaterialsBg .mats {
+    width: 50%;
+    background-color: whitesmoke;
+    margin-left: 25%;
+}
+
+#selectMaterialsBg .mats label img {
+    width: 2em;
+    height: 2em;
+}
+
+
+#selectMaterialsBg .mats label {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+#selectMaterialsBg .mats input {
+    width: 4em;
+    height: 2em;
+    margin-left: 5px;
+}
+
+#storage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: snow;
+}
+
+#storage h1 {
+    font-family: Ubuntu;
+    font-size: 2em;
+    margin: 10px;
+}
+
+#storage #items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+#storage #items .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 2px black;
+    margin: 5px;
+    padding: 2px;
+}
+
+#storage #items .item img {
+    width: 3em;
+    height: 3em;
+    margin-right: 10px;
+}
+
+#storage #items .item p {
+    font-family: Ubuntu;
+    font-size: 1em;
+}
+
+#storage #items .item input {
+    font-size: 1em;
+    margin-left: 10px;
+    width: 4ch;
+}
+
+#setStorage {
+    background-color: green;
+    border: solid 3px green;
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 2em;
+}
+
+#setStorage:hover {
+    cursor: pointer;
+    background-color: snow;
+    color: green;
+}
+
+
+#allNeededMats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: lightcoral;
+    border: solid black 3px;
+    border-radius: 10px;
+}
+
+#allNeededMats .material {
+    font-family: 'Ubuntu';
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#allNeededMats .material img {
+    width: 2em;
+    height: 2em;
+}
