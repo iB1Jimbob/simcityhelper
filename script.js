@@ -23,7 +23,7 @@ document.querySelector('.newBtn').addEventListener('click', () => {
                 });
             }
         });
-        let id = fs.readFileSync('id.txt');
+        let id = parseFloat(fs.readFileSync('id.txt'));
         id++;
         pFile.push({ id: id, materials: p });
         fs.writeFileSync('id.txt', id);
